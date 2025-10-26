@@ -1,8 +1,15 @@
+import Nav from "./Nav"
+import logo from '../icons_assets/Logo.jpg'
 
 const Header = () => {
     return (
         <>
-            <img src="../icons_assets/Logo.jpg" />
+            <div className='header'>
+                <a href="#">
+                    <img src={logo} alt="Little Lemon"/>
+                </a>
+                <Nav />
+            </div>
         </>
     )
 }

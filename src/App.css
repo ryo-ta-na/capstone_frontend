@@ -1,38 +1,210 @@
-.App {
+:root {
+  /* colours */
+  --primary-color-green: #495E57;
+  --primary-color-yellow: #F4CE14;
+  --secondary-color-orange : #EE9972;
+  --secondary-color-pink : #FBDABB;
+  --secondary-color-grey : #EDEFEE;
+  --secondary-color-black : #333333;
+  --white: #FFFFFF;
+
+  /* Side margins */
+  --side-margin: 30px;
+
+  /* button size */
+  --button-width : 150px;
+  --button-height : 40px;
+
+  /* Specials card */
+  --specials-card-top-radius: 10%;
+  --specials-card-width: 28vw;
+  --specials-card-min-width: 200px;
+  --specials-card-max-width: 300px;
+
+  /* Testinomials card */
+  --specials-card-min-width: 200px;
+  --specials-card-max-width: 250px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* background-color: #EDEFEE; */
+  background-color: var(--white)
+}
+
+/* color of characters */
+h1, h2, h3, h4, h5, p, a {
+  color: var(--secondary-color-black);
+}
+
+.about h1 {
+  color: var(--primary-color-yellow);
+}
+
+.about :is(h3, p), .testimonials h3, .footer :is(h3, p) {
+  color: var(--white);
+}
+
+/* fonts */
+h1 {
+  font-size: 64pt;
+  font-family: "Markazi Text";
+}
+
+h2 {
+  font-size: 40pt;
+  font-family: "Markazi Text";
+}
+
+h3 {
+  font-size: 20pt;
+  font-family: "Karla";
+  font-weight: 800; /* extra bold */
+}
+
+h4 {
+  font-size: 18pt;
+  font-family: "Karla";
+  font-weight: 700; /* bold */
+}
+
+h5 {
+  font-size: 18pt;
+  font-family: "Karla";
+  font-weight: 700; /* bold */
+}
+
+p, li {
+  font-size: 16pt;
+  font-family: "Karla";
+}
+
+/* Header Logo */
+.header {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 200px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Nav */
+.nav-ul {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+}
+
+.nav-li {
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 13px;
+  border:1px solid var(--white);
+  min-width: 50px;
+}
+
+.nav-li:hover {
+  border:1px solid ;
+}
+
+/* Main */
+/* Main About */
+.about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  background-color: var(--primary-color-green);
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-green);
+  justify-content: center;
+  margin: 0 var(--side-margin);
+}
+
+.about :is(h1, h3, p, img) {
+  background-color: var(--primary-color-green);
+}
+
+.about img {
+  background-color: var(--primary-color-green);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.about button {
+  width: var(--button-width);
+  height: var(--button-height);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  background-color: var(--primary-color-yellow);
+  border: 0;
+  border-radius: 3px;
+}
+
+/* Main Specials */
+.spceials {
+  display: flex;
+  flex-direction: column;
+}
+
+.titleAndButton {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
+}
+
+.specials button {
+  width: var(--button-width);
+  height: var(--button-height);
+  color: var(--white);
+  background-color: var(--secondary-color-black);
+  border-radius: 3px;
+  margin: 5px;
+}
+
+/* Main Testinomials */
+.testinomials {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color-green);
+  min-height: 300px;
+  /* align-items: center; */
+  justify-content: center;
+  padding: var(--side-margin);
+}
+
+.testinomials :is(h2) {
+  color: var(--white);
+  background-color: var(--primary-color-green);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Main Decription */
+
+.description img {
+  width: 100px; /* temporary */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Footer */
+.footerLogo {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footerLogo img {
+  width: 50vw;
+  max-width: 500px;
+  margin: 20px
 }

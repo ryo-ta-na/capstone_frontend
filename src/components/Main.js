@@ -1,8 +1,15 @@
+import About from "./main/About"
+import Specials from "./main/Specials"
+import Testinomials from "./main/Testinomials"
+import Description from "./main/Description"
 
 const Main = () => {
     return (
         <>
-            Main
+            <About />
+            <Specials />
+            <Testinomials />
+            <Description />
         </>
     )
 }

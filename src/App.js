@@ -6,12 +6,11 @@ import './App.css';
 
 function App() {
   return (
-    <>
-      <Header></Header>
-      <Nav></Nav>
-      <Main></Main>
-      <Footer></Footer>
-    </>
+    <div className='entireContainer'>
+      <Header/>
+      <Main/>
+      <Footer/>
+    </div>
   );
 }
 
