@@ -37,8 +37,11 @@
 h1, h2, h3, h4, h5, p, a {
   color: var(--secondary-color-black);
 }
-
+/* 
 .about h1 {
+  color: var(--primary-color-yellow);
+} */
+.lemonColorText {
   color: var(--primary-color-yellow);
 }
 
@@ -192,13 +195,40 @@ p, li {
 }
 
 /* Main Decription */
+.description {
+  display: flex;
+  flex-direction: row;
+  margin-left: var(--side-margin);
+  margin-right: var(--side-margin);
+}
+
+.descriptionTexts {
+  text-justify: center;}
 
 .description img {
-  width: 100px; /* temporary */
+  width: 30vw; /* temporary */
+  margin: 10px;
+}
+
+@media (max-width: 734px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .description img {
+    width: 40vw;
+  }
+}
+
+.description :is(h2, h3, p) {
+  margin: 10px;
+  align-items: center;
 }
 
 /* Footer */
 .footerLogo {
+  background-color: var(--primary-color-green);
   display: flex;
   justify-content: center;
 }
