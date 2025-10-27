@@ -27,7 +27,7 @@ const menus = [
 
 const Specials = () => {
     return (
-        <div className="specials">
+        <div id="specials" className="specials">
             <div className="titleAndButton">
                 <h2>Specials</h2>
                 <button type="submmit">Online Menu</button>

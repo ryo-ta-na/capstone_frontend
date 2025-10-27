@@ -15,6 +15,9 @@
   --button-width : 150px;
   --button-height : 40px;
 
+  /* nav items font size */
+  --nav-font-size: 20pt;
+
   /* Specials card */
   --specials-card-top-radius: 10%;
   --specials-card-width: 28vw;
@@ -78,6 +81,11 @@ h5 {
   font-weight: 700; /* bold */
 }
 
+button {
+  font-size: 16pt;
+  font-family: "Karla";
+}
+
 p, li {
   font-size: 16pt;
   font-family: "Karla";
@@ -113,8 +121,19 @@ p, li {
   min-width: 50px;
 }
 
-.nav-li:hover {
-  border:1px solid ;
+.navLinkComponent {
+  text-decoration: none;
+  font-size: 16pt;
+  font-family: "Karla";
+}
+
+.nav-li button {
+  border: 0;
+
+}
+
+.nav-li button:hover {
+  cursor: pointer;
 }
 
 /* Main */
@@ -134,7 +153,7 @@ p, li {
   margin: 0 var(--side-margin);
 }
 
-.about :is(h1, h3, p, img) {
+.about :is(h1, h3, p, .reservationButton) {
   background-color: var(--primary-color-green);
 }
 
@@ -152,6 +171,10 @@ p, li {
   background-color: var(--primary-color-yellow);
   border: 0;
   border-radius: 3px;
+}
+
+.about button:hover {
+  border: 3px solid var(--secondary-color-black);
 }
 
 /* Main Specials */
@@ -231,10 +254,11 @@ p, li {
   background-color: var(--primary-color-green);
   display: flex;
   justify-content: center;
+  padding: 20px;
 }
 
 .footerLogo img {
   width: 50vw;
   max-width: 500px;
-  margin: 20px
+  cursor: pointer;
 }

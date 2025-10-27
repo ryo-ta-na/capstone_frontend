@@ -1,0 +1,9 @@
+
+.bookingFormContainer {
+    margin-left: var(--side-margin);
+    margin-right: var(--side-margin);
+}
+
+.bookingFormContainer input {
+    margin-bottom: 10px;
+}

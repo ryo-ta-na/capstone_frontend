@@ -30,7 +30,7 @@ const data = [
 
 const Testinomials = () => {
     return (
-        <div className="testinomials">
+        <div id="testinomials" className="testinomials">
             <h2 className='tetsinomialsTitle'>Testinomials</h2>
             <TestinommialsCard data={data} />
         </div>

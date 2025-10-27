@@ -1,0 +1,12 @@
+
+.confirmedBookingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+}
+
+p {
+    margin: 10px;
+    text-align: center;
+}
