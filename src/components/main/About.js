@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom'
 
 import restauranfood from "../../icons_assets/restauranfood.jpg"
-import BookingPage from '../booking/BookingPage'
 
 const About = () => {
     return (
@@ -14,7 +13,7 @@ const About = () => {
                 </p>
                 <div class="reservationButton">
                     <Link to='/reservations'>
-                        <button >Reserve a table</button>
+                        <button aria-label="On Click">Reserve a table</button>
                     </Link>
                 </div>
             </div>

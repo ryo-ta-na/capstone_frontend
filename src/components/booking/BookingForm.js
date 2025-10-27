@@ -61,6 +61,7 @@ const BookingForm = ({bookingData, setBookingData, availableTime, dispatch}) => 
                     id="date"
                     value={bookingData.date}
                     onChange={handleChange}
+                    required
                 />
 
                 <label htmlFor="time">Choose time</label>
@@ -68,6 +69,7 @@ const BookingForm = ({bookingData, setBookingData, availableTime, dispatch}) => 
                     id="time"
                     value={bookingData.time}
                     onChange={handleChange}
+                    required
                 >
                     <option value="">Select a time</option>
                     <AvailableSlots availableTime={availableTime}/>
@@ -83,6 +85,7 @@ const BookingForm = ({bookingData, setBookingData, availableTime, dispatch}) => 
                     id="guests"
                     value={bookingData.guests}
                     onChange={handleChange}
+                    required
                 />
 
                 <label htmlFor="occasion">Occasion</label>
@@ -90,6 +93,7 @@ const BookingForm = ({bookingData, setBookingData, availableTime, dispatch}) => 
                     id="occasion"
                     value={bookingData.occasion}
                     onChange={handleChange}
+                    required
                 >
                     <option value="Birthday">Birthday</option>
                     <option value="Anniversary">Anniversary</option>

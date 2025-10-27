@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import logo from "../icons_assets/Logo.jpg"
 const Footer = () => {
@@ -15,11 +15,13 @@ const Footer = () => {
     }
 
     return (
-        <div className="footerLogo">
-            <button onClick={handleClickFooterLogo}>
-                <img src={logo} />
-            </button>
-        </div>
+        <footer>
+            <div className="footerLogo">
+                <button onClick={handleClickFooterLogo}>
+                    <img src={logo} alt="Logo"/>
+                </button>
+            </div>
+        </footer>
     )
 }
 
